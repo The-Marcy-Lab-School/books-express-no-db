@@ -1,6 +1,6 @@
-const list = async (req, res) => {
+const list = (req, res) => {
   const { Book } = req;
-  const books = await Book.list();
+  const books = Book.list();
   res.status(200).send(books);
 };
 
